@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+  <meta name="author" content="Creative Tim">
+  <title>Coronavirus Dashboard</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/brand/favicon.png" type="image/png">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <!-- Icons -->
+  <link rel="stylesheet" href="assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <!-- Page plugins -->
+  <!-- Argon CSS -->
+  <style>
+small {
+  font-size: smaller;
+}
+</style>
+  <link rel="stylesheet" href="assets/css/argon.css?v=1.2.0" type="text/css">
+</head>
+
+<body>
+
+
+  <!-- Main content -->
+  <div class="main-content" id="panel">
+    <!-- Topnav -->
+    <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Search form -->
+          <div class="logo">
+            <img src="assets/img/logo.png" alt="">
+          </div>
+        <h5><span style="color: #ffffff;"><strong>Coronavirus Dashboard</strong></span></h5>
+
+          <!-- Navbar links -->
+          <ul class="navbar-nav align-items-center  ml-md-auto ">
+            <li class="nav-item d-xl-none">
+              <!-- Sidenav toggler -->
+              <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item d-sm-none">
+
+
+
+
+            <li class="nav-item dropdown">
+
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-dark bg-default  dropdown-menu-right ">
+                <div class="row shortcuts px-4">
+                  <a href="#!" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-red">
+                      <i class="ni ni-calendar-grid-58"></i>
+                    </span>
+                    <small>Calendar</small>
+                  </a>
+                  <a href="#!" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-orange">
+                      <i class="ni ni-email-83"></i>
+                    </span>
+                    <small>Email</small>
+                  </a>
+                  <a href="#!" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-info">
+                      <i class="ni ni-credit-card"></i>
+                    </span>
+                    <small>Payments</small>
+                  </a>
+                  <a href="#!" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-green">
+                      <i class="ni ni-books"></i>
+                    </span>
+                    <small>Reports</small>
+                  </a>
+                  <a href="#!" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-purple">
+                      <i class="ni ni-pin-3"></i>
+                    </span>
+                    <small>Maps</small>
+                  </a>
+                  <a href="#!" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-yellow">
+                      <i class="ni ni-basket"></i>
+                    </span>
+                    <small>Shop</small>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
+            <li class="nav-item dropdown">
+              <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="media align-items-center">
+
+                  <div class="media-body  ml-2  d-none d-lg-block">
+                    <img src="assets/img/tcd.png" alt="">
+                  </div>
+                </div>
+              </a>
+              <div class="dropdown-menu  dropdown-menu-right ">
+                <div class="dropdown-header noti-title">
+                  <h6 class="text-overflow m-0">Welcome!</h6>
+                </div>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-single-02"></i>
+                  <span>My profile</span>
+                </a>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-settings-gear-65"></i>
+                  <span>Settings</span>
+                </a>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-calendar-grid-58"></i>
+                  <span>Activity</span>
+                </a>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-support-16"></i>
+                  <span>Support</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-user-run"></i>
+                  <span>Logout</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header bg-primary pb-6">
+      <div class="container-fluid">
+        <div class="header-body">
+          <div class="row align-items-center py-4">
+            <div class="col-lg-6 col-7">
+              <h6 class="h2 text-white d-inline-block mb-0">Home</h6>
+              <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                  <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="#">Dashboards</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-lg-6 col-5 text-right">
+      <!--        <a href="#" class="btn btn-sm btn-neutral">New</a>
+              <a href="#" class="btn btn-sm btn-neutral">Filters</a> -->
+            </div>
+          </div>
+          <!-- Card stats -->
+          <div class="row">
+            <div class="col-xl-3 col-md-6">
+              <div class="card card-stats">
+                <!-- Card body -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">Total Recoveries Worldwide</h5>
+                      <span class="h2 font-weight-bold mb-0">595,109</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
+                        <i class="ni ni-favourite-28"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-sm">
+                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 78.76%</span>
+                    <span class="text-nowrap">Recovery Rate</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="card card-stats">
+                <!-- Card body -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">Total Deaths Worldwide</h5>
+                      <span class="h2 font-weight-bold mb-0">159,661</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+                        <i class="ni ni-fat-add"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-sm">
+                    <span class="text-danger mr-2"><i class="fa fa-arrow-up"></i> 21.24%</span>
+                    <span class="text-nowrap">Death Rate</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="card card-stats">
+                <!-- Card body -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">Active Cases Worldwide</h5>
+                      <span class="h2 font-weight-bold mb-0">1,523,145</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-gradient-blue text-white rounded-circle shadow">
+                        <i class="ni ni-chart-bar-32"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-sm">
+                    <span class="text-danger mr-2"><i class="fa fa-arrow-up"></i> 1316.11%</span>
+                    <span class="text-nowrap">Since last month</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="card card-stats">
+                <!-- Card body -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">Last Updated</h5>
+                      <span class="h2 font-weight-bold mb-0">18-Apr 2020 19:00 GMT</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-gradient-info text-white rounded-circle shadow">
+                        <i class="ni ni-time-alarm"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-sm">
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+      <div class="row">
+        <div class="col-xl-8">
+            <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/1935217" data-url="https://flo.uri.sh/visualisation/1935217/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+            </div>
+
+                  <div class="col-xl-4">
+          <!-- Progress track -->
+          <div class="card">
+            <!-- Card header -->
+            <div class="card-header">
+              <!-- Title -->
+              <h5 class="h3 mb-0">Most affected countries (Confirmed Cases)</h5>
+            </div>
+            <!-- Card body -->
+            <div class="card-body">
+              <!-- List group -->
+              <ul class="list-group list-group-flush list my--3">
+                <li class="list-group-item px-0">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <!-- Avatar -->
+                      <a href="#" class="avatar rounded-circle">
+                        <img alt="Image placeholder" src="https://www.countryflags.io/us/shiny/64.png">
+                      </a>
+                    </div>
+                    <div class="col">
+                      <h5>USA</h5>
+                    <small>734,631 Cases</small>
+                      <div class="progress progress-xs mb-0">
+                        <div class="progress-bar bg-red" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item px-0">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <!-- Avatar -->
+                      <a href="#" class="avatar rounded-circle">
+                        <img alt="Image placeholder" src="https://www.countryflags.io/es/shiny/64.png">
+                      </a>
+                    </div>
+                    <div class="col">
+                      <h5>Spain</h5>
+                        <small>191,726 Cases</small>
+                      <div class="progress progress-xs mb-0">
+                        <div class="progress-bar bg-orange" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item px-0">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <!-- Avatar -->
+                      <a href="#" class="avatar rounded-circle">
+                        <img alt="Image placeholder" src="https://www.countryflags.io/it/shiny/64.png">
+                      </a>
+                    </div>
+                    <div class="col">
+                      <h5>Italy</h5>
+                      <small>175,925 Cases</small>
+                      <div class="progress progress-xs mb-0">
+                        <div class="progress-bar bg-yellow" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item px-0">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <!-- Avatar -->
+                      <a href="#" class="avatar rounded-circle">
+                        <img alt="Image placeholder" src="https://www.countryflags.io/fr/shiny/64.png">
+                      </a>
+                    </div>
+                    <div class="col">
+                      <h5>France</h5>
+                      <small>151,793 Cases</small>
+                      <div class="progress progress-xs mb-0">
+                        <div class="progress-bar bg-teal" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item px-0">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <!-- Avatar -->
+                      <a href="#" class="avatar rounded-circle">
+                        <img alt="Image placeholder" src="https://www.countryflags.io/de/shiny/64.png">
+                      </a>
+                    </div>
+                    <div class="col">
+                      <h5>Germany</h5>
+                      <small>143,172 Cases</small>
+                      <div class="progress progress-xs mb-0">
+                        <div class="progress-bar bg-aqua" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+                </div>
+              </div>
+            </div>
+
+
+              <div id="world"></div>
+              <div class='tableauPlaceholder' id='viz1587249475067' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusDashboard_&#47;MapDashboard_&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CoronavirusDashboard_&#47;MapDashboard_' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusDashboard_&#47;MapDashboard_&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1587249475067');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                <div id="line"></div>
+            <div class='tableauPlaceholder' id='viz1587249717538' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusCOVID-19TotalCases&#47;COVID-19Cases&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CoronavirusCOVID-19TotalCases&#47;COVID-19Cases' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusCOVID-19TotalCases&#47;COVID-19Cases&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1587249717538');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+              <div class='tableauPlaceholder' id='viz1587250198651' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;RecoveriesCovid19&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='RecoveriesCovid19&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;RecoveriesCovid19&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1587250198651');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+              <!-- Chart -->
+
+
+
+
+
+
+
+  <!-- Argon Scripts -->
+  <!-- Core -->
+  <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/js-cookie/js.cookie.js"></script>
+  <script src="assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  <!-- Optional JS -->
+  <script src="assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="assets/vendor/chart.js/dist/Chart.extension.js"></script>
+  <!-- Argon JS -->
+  <script src="assets/js/argon.js?v=1.2.0"></script>
+</body>
+
+</html>
